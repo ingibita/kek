@@ -1,3 +1,5 @@
+// Рязанцева Екатерина 01.04.24
+// Страница 5 с регистрацией
 package com.example.ryazanceva;
 
 import androidx.appcompat.app.AppCompatActivity;
