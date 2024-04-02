@@ -1,5 +1,3 @@
-// Рязанцева Екатерина 01.04.24
-// Главная страница
 package com.example.ryazanceva;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,12 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.view.WindowManager;
 
-import com.google.android.material.transition.Hold;
-
-public class MainActivity1 extends AppCompatActivity {
+public class MainActivity10 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +18,7 @@ public class MainActivity1 extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity1.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity10.this, MainActivity10.class);
                 startActivity(intent);
                 finish();
             }
