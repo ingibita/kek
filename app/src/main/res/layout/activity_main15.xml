@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:paddingVertical="30dp">
+        android:paddingVertical="30dp"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/pr1"
