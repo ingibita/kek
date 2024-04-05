@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Transactionsuccessful">
+    tools:context=".MainActivity16">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:paddingVertical="30dp">
+        android:paddingVertical="30dp"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/pr1"
@@ -21,7 +22,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:adjustViewBounds="true"
-            android:src="@drawable/progress1" />
+            android:src="@drawable/progress1"
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck"
+            android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/pr2"
@@ -32,7 +35,9 @@
             android:layout_alignParentEnd="true"
             android:adjustViewBounds="true"
             android:src="@drawable/progress2"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
 
         <LinearLayout
             android:id="@+id/LLHints"
@@ -48,7 +53,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Your rider is on the way to your destination"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -59,52 +65,46 @@
                     android:id="@+id/textView35"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tracking Number" />
+                    android:text="Tracking Number"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/ofoo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="R-7458-4567-4434-5854"
-                    android:layout_marginLeft="5dp"
-                    android:textColor="@color/blur"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                >
-
-
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/blur"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
 
             <Button
-                android:layout_marginTop="141dp"
                 android:id="@+id/button3"
                 android:layout_width="342dp"
-                android:layout_height="46dp"
-                android:text="Track my item"
+                android:layout_height="48dp"
+                android:layout_marginTop="141dp"
                 android:backgroundTint="@color/blur"
                 android:bottomLeftRadius="5dp"
                 android:bottomRightRadius="100dp"
                 android:onClick="StendOTP1"
-                app:cornerRadius="5dp"/>
+                android:text="Track my item"
+                app:cornerRadius="5dp"
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="342dp"
-                android:layout_height="46dp"
+                android:layout_height="48dp"
 
                 android:layout_marginEnd="2dp"
                 android:backgroundTint="#FFFFFF"
                 android:onClick="lol"
                 android:text="Go back to homepage"
                 android:textColor="#0560FA"
+                app:cornerRadius="5dp"
                 app:strokeColor="#0560FA"
                 app:strokeWidth="1dp"
-                app:cornerRadius="5dp"/>
+                tools:ignore="HardcodedText,VisualLintButtonSize" />
 
 
         </LinearLayout>
